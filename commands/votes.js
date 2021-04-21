@@ -6,7 +6,7 @@ exports.run = async (client, message, args, ops, database) => {
 	let db = await database.ref(`Users`).once('value');
 	let botao = new Array();
 await db.forEach((e, i)=> {
-botao.push(message.channel.send('nome: '+e.val().nome+'\nlikes: '+e.val().like))
+botao.push(message.channel.send('Name: '+e.val().nome+'\nlikes: '+e.val().like))
 });
 return botao
 }
