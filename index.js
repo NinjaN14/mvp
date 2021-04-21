@@ -40,8 +40,9 @@ client.on('message', async (message) => {
   
 	let dbValor = await database.ref(`Users/${user.id}`).once('value');
 
-if(message.channel.id == "747358219781013525"){
-		message.react('📰').then(r => {
+if(message.channel.id == "834023774009032744"){
+		message.react('👍').then(r => {
+			message.react('👎').then(r => {})
 		})
 
 if(dbValor.val() == null){
@@ -56,7 +57,7 @@ if(dbValor.val() == null){
 //const like = dbValor.val().like
 //ar conta = 1 + like
 
-const infosFilter = (reaction, user) => reaction.emoji.name === '📰' && user.id //=== message.author.id;
+const infosFilter = (reaction, user) => reaction.emoji.name === '👍' && user.id //=== message.author.id;
 const infos = message.createReactionCollector(infosFilter);
 
 	infos.on('collect', async (r2) => {
@@ -134,7 +135,7 @@ client.on('raw', async dados => {
 
 client.on("ready", () => {
   let activities = [
-    `FeedBack`,
+    `Badlanders`,
   ]
   i = 0;
   setInterval(() => client.user.setActivity(`${activities[i++ % activities.length]}`,{
