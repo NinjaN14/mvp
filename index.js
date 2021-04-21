@@ -20,16 +20,16 @@ client.fs = fs;
 client.commands = new Discord.Collection();
 
 var firebaseConfig = {
-    apiKey: "AIzaSyCnx6dJmFqgZ2ePHZfsGA6hkrwWqMmC5a8",
-    authDomain: "registro-3ecf7.firebaseapp.com",
-    databaseURL: "https://registro-3ecf7-default-rtdb.firebaseio.com",
-    projectId: "registro-3ecf7",
-    storageBucket: "registro-3ecf7.appspot.com",
-    messagingSenderId: "339199334853",
-    appId: "1:339199334853:web:7c188eaac81c79ebda93ac"
+    apiKey: "AIzaSyBbfAAzrPVt7WhZmwdkHNo09BIiotAhbR4",
+    authDomain: "badlandersmvp.firebaseapp.com",
+    databaseURL: "https://badlandersmvp-default-rtdb.firebaseio.com",
+    projectId: "badlandersmvp",
+    storageBucket: "badlandersmvp.appspot.com",
+    messagingSenderId: "90142387590",
+    appId: "1:90142387590:web:2702118910ac51f3ed1007"
   };
   // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database()
 
